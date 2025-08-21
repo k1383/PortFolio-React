@@ -5,7 +5,7 @@ type ProjectsCardProsp = {
     Link: string;
 };
 
-const ProjectsCard: React.FC<ProjectsCardProsp> = ({ image, title, description, Link}) => (
+const ProjectsCard: React.FC<ProjectsCardProsp> = ({ image, title, description, Link }) => (
     <div>
         <img src={image} alt={title} />
         <h3>{title}</h3>

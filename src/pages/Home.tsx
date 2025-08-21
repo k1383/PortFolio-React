@@ -25,7 +25,7 @@ const Home = () => {
                             <p>Développeur Web</p>
                             <p>Je crée des expériences web élégantes, intuitives et </p>
                             <p>performantes avec une attention particulière aux détails.</p>
-                            <button><a href="#">Voir mes projets</a></button>
+                            <button><a href="./Projects">Voir mes projets</a></button>
                         </article>
                         <img src="../image/pdp.jpg" alt="Image" />
                     </div>
@@ -36,7 +36,7 @@ const Home = () => {
                     <div id="div1">
                         <article>
                             <h4>Mon parcours</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, cupiditate totam! Amet vero natus unde dolor, vel laudantium praesentium eveniet sit totam sequi omnis excepturi libero dicta voluptatem quaerat doloremque!.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, cupiditate totam! Amet vero natus unde dolor, vel laudantium praesentium eveniet sit totam sequi omnis excepturi libero dicta voluptatem quaerat doloremque!</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis amet, alias quas tempora, enim tempore dolore nulla fuga non cum eaque quis adipisci. A magnam qui totam tenetur porro! Voluptatibus..</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt mollitia, ab dolorem ullam hic sit, itaque molestiae voluptatibus, provident eum ducimus aliquam iste atque illum ad facilis ipsa obcaecati a..</p>
                             <a href="">En savoir plus sur mon parcours <FaArrowRight /></a>
@@ -108,10 +108,7 @@ const Home = () => {
                             <label htmlFor="message">Message</label>
                             <textarea name="message" id="message" required />
                         </div>
-                        <div id="div5">
-                            <input type="checkbox" id="checkbox" required/>
-                            <label htmlFor="checkbox">J'accepte que mes données soient traitées conformément à la politique deconfidentialité. Elles ne seront utilisées que pour répondre à ma demande.</label>
-                        </div>
+                        
                         <button type="submit" id="submit">Envoyer le message</button>
                     </form>
                 </section>

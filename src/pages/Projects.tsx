@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import ProjectsCard from "../components/ProjectCard";
+import '../style/Projects.scss'
 import data from '../data/Projects.json';
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import '../style/Projects.scss'
 
 type Project = {
     id: number;
@@ -44,13 +44,10 @@ const Projects = () => {
                 </section>
             </main>
 
-            <footer>
-                <Footer />
-            </footer>
-
+            <Footer />
+            
         </>
     );
 };
 
 export default Projects
-

@@ -112,6 +112,7 @@ header nav {
     font-weight: 700;
     font-size: 36px;
     text-align: center;
+    margin: 30px 0;
 }
 #div1 {
     display: grid;
@@ -124,11 +125,14 @@ header nav {
     font-weight: 500;
     font-size: 16px;
 }
-
+#div1 article p{
+    margin: 20px 0;
+}
 #About h4 {
     font-family: var(--Playfair-Display);
     font-weight: 600;
     font-size: 24px;
+    margin: 10px 0;
 }
 #About p {
     font-family: var(--Inter);
@@ -229,6 +233,7 @@ header nav {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
+    margin: 10px 0;
 }
 /* Forumlaire */ 
 form {
@@ -236,8 +241,9 @@ form {
     box-shadow: 0px 1px 2px 0px #0000000D;
     width: 672px;
     height: 498px;
-    border-radius: 16px;    
+    border-radius: 16px;  
 }
+
 form label {
     font-family: var(--Inter);
     font-weight: 500;
@@ -266,14 +272,6 @@ form textarea {
     border-radius: 8px;
     width: 608px;
     height: 146px;
-}
-#div5 {
-    margin: 10px 30px;
-}
-#checkbox {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;   
 }
 /* Submit */
 #submit {
