@@ -19,7 +19,7 @@ img {
 }
 /* Icons arrow */ 
 .icon-arrow {
-    color: black;
+    font-size: 12px;
 }
 
 /* Section 1 Introduction */
@@ -74,4 +74,21 @@ img {
     font-family: var(--Inter);
     font-weight: 500;
     font-size: 16px;
+}
+
+@media screen and (max-width:1024px) {
+    #Introduction img   {
+        position: absolute;
+        left: 40%;
+    }
+    #Introduction div {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #Introduction div {
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
 }

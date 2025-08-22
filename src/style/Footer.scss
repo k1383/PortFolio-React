@@ -3,7 +3,7 @@ footer {
     background-color: #2D3047;
     padding: 30px;
 }
-footer div {
+footer  > div {
    display: flex;
    justify-content: space-between;
 }
@@ -15,4 +15,5 @@ footer p {
 }
 #Icons {
     font-size: 24px;
+    color: white;
 }

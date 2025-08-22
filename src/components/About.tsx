@@ -11,6 +11,7 @@ import { FaNodeJs } from "react-icons/fa"; // Nodejs  <FaNodeJs />
 import { FaFigma } from "react-icons/fa"; // Figma  <FaFigma />
 import { FaWordpress } from "react-icons/fa"; // Wordpress  <FaWordpress />
 import { FaArrowRight } from "react-icons/fa6"; // Arrow right  <FaArrowRight />
+import { FaGithub } from "react-icons/fa"; //  GitHub  <FaGithub />
 
 const About = () => {
     return <section id="About" className="container">
@@ -28,16 +29,17 @@ const About = () => {
                 <h3>Mes compétences</h3>
                 <div>
                     <article>
-                        <FaHtml5 className="icon"/>
+                        <FaHtml5 className="icon"/> 
                         <FaCss3Alt className="icon"/>
                         <IoLogoJavascript className="icon"/>
-                        <FaPhp className="icon"/>
-                    </article>
-                    <article>
+                  
                         <FaNodeJs className="icon"/> 
+                        <FaPhp className="icon"/>
                         <FaReact className="icon"/>
+                    
                         <FaFigma className="icon"/>
                         <FaWordpress className="icon"/>
+                        <FaGithub className="icon"/>
                     </article>
                 </div>
             </article>

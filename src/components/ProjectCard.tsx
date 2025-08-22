@@ -16,7 +16,7 @@ const ProjectsCard: React.FC<ProjectsCardProsp> = ({ image, title, description, 
             <div className="Info">
                 <h3>{title}</h3>
                 <p className="descriptionproject">{description}</p>
-                <a href={Link}>{SeeTheProject} <FaArrowRight /></a>
+                <a href={Link}>{SeeTheProject} <FaArrowRight className="icons-arrow"/></a>
             </div>
         </article>
    

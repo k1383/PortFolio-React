@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import '../style/Header.scss'
 
+// Icons
+import { CiMenuFries } from "react-icons/ci"; // BugerMenu  <CiMenuFries />
+
 const Header = () => (
     
     <header className="container">
@@ -11,6 +14,7 @@ const Header = () => (
             <Link to="/Projects">Projets</Link>
             <Link to="/Contact">Contact</Link>
         </nav>
+        <CiMenuFries id='Bugermenu'/>
     </header>
    
 );

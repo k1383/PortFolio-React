@@ -6,6 +6,17 @@
     text-align: center;
     margin: 50px 0;
 }
+#About h3 {
+    font-family: var(--Playfair-Display);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 10px 0;
+}
+#About p {
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: 16px;
+}
 #div1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,17 +32,21 @@
 #div1 article p{
     margin: 20px 0;
 }
-#About h3 {
-    font-family: var(--Playfair-Display);
-    font-weight: 600;
-    font-size: 24px;
-    margin: 10px 0;
-}
-#About p {
-    font-family: var(--Inter);
-    font-weight: 400;
-    font-size: 16px;
-}
 .icon {
     font-size: 40px;
+    margin: 15px 55px;  
+}
+
+@media screen and (max-width:1024px) {
+    #div1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #About h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    
 }

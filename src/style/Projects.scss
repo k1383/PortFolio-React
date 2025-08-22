@@ -74,3 +74,21 @@ h3 {
     font-weight: 500;
     font-size: 16px;
 }
+
+.icons-arrow {
+    font-size: 12px;
+}
+
+@media screen and (max-width:1024px) {
+    #div2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #div2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
