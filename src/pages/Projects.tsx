@@ -44,7 +44,6 @@ const Projects = () => {
                             />
                             ))}
                         </div>
-                        <p>1</p>
                 </section>
             </main>
 
