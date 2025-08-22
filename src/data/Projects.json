@@ -4,6 +4,7 @@
         "image": "image/JohnDoe.png",
         "title": "John Doe",
         "description": "Lorem ipsum dolor sit amet consectetur.",
+        "SeeTheProject" : "Voir le projet",
         "Link": "https://github.com/k1383/John-Doe-"
     },
     {
@@ -11,6 +12,7 @@
         "image": "/image/HomeKey.png",
         "title": "Home Key",
         "description": "Lorem ipsum dolor sit amet consectetur.",
+        "SeeTheProject" : "Voir le projet",
         "Link": "https://github.com/k1383/Home-Key"
     },
     {
@@ -18,6 +20,7 @@
         "image": "/image/Oraculus.png",
         "title": "Oraculus",
         "description": "Lorem ipsum dolor sit amet consectetur.",
+        "SeeTheProject" : "Voir le projet",
         "Link": "https://github.com/k1383/Oraculus"
     },
     {
@@ -25,6 +28,7 @@
         "image": "/image/Hagile.png",
         "title": "Hagile",
         "description": "Lorem ipsum dolor sit amet consectetur.",
+        "SeeTheProject" : "Voir le projet",
         "Link": "https://github.com/k1383/Hagile"
     },
     {
@@ -32,6 +36,7 @@
         "image": "/image/BrigitteB.png",
         "title": "Brigitte B",
         "description": "Lorem ipsum dolor sit amet consectetur.",
+        "SeeTheProject" : "Voir le projet",
         "Link": "https://github.com/k1383/Brigitte-Galerie-d-art"
     },
     {
@@ -39,20 +44,23 @@
         "image": "/image/Malmaison.png",
         "title": "Fonciere Pagerie Malmaison",
         "description": "Lorem ipsum dolor sit amet consectetur.",
+        "SeeTheProject" : "Voir le projet",
         "Link": "https://github.com/k1383/Malmaison"
     },
     {
         "id": 7,
-        "image": "../image/Vividly.png",
+        "image": "/image/Vividly.png",
         "title": "Vividly",
         "description": "Lorem ipsum dolor sit amet consectetur.",
+        "SeeTheProject" : "Voir le projet",
         "Link": ""
     },
     {
         "id": 8,
-        "image": "",
+        "image": "/image/Logo-GeniArtHub.png",
         "title": "GeniArtHub-main",
         "description": "Lorem ipsum dolor sit amet consectetur.",
+        "SeeTheProject" : "Voir le projet",
         "Link": "https://github.com/k1383/GeniArtHub"
     },
     {
@@ -60,6 +68,7 @@
         "image": "",
         "title": "",
         "description": "Lorem ipsum dolor sit amet consectetur.",
+        "SeeTheProject" : "Voir le projet",
         "Link": ""
     }
 ]
