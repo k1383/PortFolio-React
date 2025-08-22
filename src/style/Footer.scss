@@ -1,0 +1,18 @@
+/* Footer */
+footer {
+    background-color: #2D3047;
+    padding: 30px;
+}
+footer div {
+   display: flex;
+   justify-content: space-between;
+}
+footer p {
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: 16px;
+    color: #9CA3AF;
+}
+#Icons {
+    font-size: 24px;
+}

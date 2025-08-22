@@ -1,3 +1,6 @@
+import { FaArrowRight } from "react-icons/fa6"; // Arrow right <FaArrowRight />
+import '../style/Projects.scss'
+
 type ProjectsCardProsp = {
     image: string;
     title: string;
@@ -6,12 +9,18 @@ type ProjectsCardProsp = {
 };
 
 const ProjectsCard: React.FC<ProjectsCardProsp> = ({ image, title, description, Link }) => (
-    <div>
-        <img src={image} alt={title} />
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <a href={Link}>Voir le projet</a>
-    </div>
+    <section id="Projects">
+        <div className="container" id="div2">
+            <article className="Project_Display">
+                <img src={image} alt={title} />
+                <div className="Info">
+                    <h3>{title}</h3>
+                    <p className="descriptionproject">{description}</p>
+                    <a href={Link}>Voir le projet <FaArrowRight /></a>
+                </div>
+            </article>
+        </div>
+    </section>
 );
 
 export default ProjectsCard

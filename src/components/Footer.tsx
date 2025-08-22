@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa"; // Icons
+import '../style/Footer.scss'
 const Footer = () => {
     return <footer>
           <div className="container">
@@ -15,7 +16,7 @@ const Footer = () => {
                </article>
 
           </div>
-    </footer>;
+    </footer>
 };
 
 export default Footer;

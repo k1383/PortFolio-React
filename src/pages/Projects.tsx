@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+
+/* Components */
 import ProjectsCard from "../components/ProjectCard";
-import '../style/Projects.scss'
-import data from '../data/Projects.json';
-import Navbar from "../components/Navbar"
+import Header from "../components/Header"
 import Footer from "../components/Footer"
+
+import data from '../data/Projects.json';
 
 type Project = {
     id: number;
@@ -21,27 +23,19 @@ const Projects = () => {
     }, []);
     return (
         <>
-            <header className="container">
-                <h1>Cournut Kantin</h1>
-                <Navbar /> 
-            </header>
+            <Header /> 
  
             <main>
-                <section id="Projects">
-                    <div className="container" id="div2">
-                        <article className="Project_Display">
-                            {projects.map((projects) => (
-                                <ProjectsCard 
-                                    key={projects.id}
-                                    image={projects.image} 
-                                    title={projects.title}
-                                    description={projects.description}
-                                    Link={projects.Link}
-                                />
-                            ))}
-                        </article>
-                    </div>
-                </section>
+                <h2>Mes projets</h2>
+                {projects.map((projects) => (
+                    <ProjectsCard 
+                        key={projects.id}
+                        image={projects.image} 
+                        title={projects.title}
+                        description={projects.description}
+                        Link={projects.Link}
+                    />
+                ))}
             </main>
 
             <Footer />

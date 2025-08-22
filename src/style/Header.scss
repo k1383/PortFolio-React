@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --Inter : "Inter", sans-serif;
+    --Playfair-Display :  "Playfair Display", serif;
+}
+* {
+    margin: 0;
+}
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: auto;
+}
+/* Header */
+header {
+    display: flex;
+    margin: 10px 0;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: var(--Playfair-Display);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+nav li {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--Inter);
+    &:hover {
+        color: #419D78;
+    }
+}
+header nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
