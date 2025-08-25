@@ -1,19 +1,29 @@
+$green-color : #419D78;
+$black-color : black;
+$gray-color : #9CA3AF;
+$white-color : #FFFFFF;
+$Inter : "Inter", sans-serif; 
+$Playfair-Display :  "Playfair Display", serif;
+
 /* Footer */
 footer {
-    background-color: #2D3047;
+    background-color: $black-color;
     padding: 30px;
-}
-footer  > div {
-   display: flex;
-   justify-content: space-between;
-}
-footer p {
-    font-family: var(--Inter);
-    font-weight: 400;
-    font-size: 16px;
-    color: #9CA3AF;
-}
-#Icons {
-    font-size: 24px;
-    color: white;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p {
+        font-family: $Inter;
+        font-weight: 400;
+        font-size: 16px;
+        color: $gray-color;
+    }
+    
+    #Icons {
+        font-size: 24px;
+        color: $white-color;
+    }
 }

@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+$green-color : #419D78;
+$black-color : #000000;
+$white-color : #FFFFFF;
+$Inter : "Inter", sans-serif; 
+$Playfair-Display :  "Playfair Display", serif;
 
-:root {
-    --Inter : "Inter", sans-serif;
-    --Playfair-Display :  "Playfair Display", serif;
-}
 * {
     margin: 0;
 }
@@ -30,51 +29,60 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; 
-}
-#Introduction div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-#Introduction article {
-    margin: 200px 0;
-}
-#Introduction h2 {
-    font-family: var(--Playfair-Display);
-    font-weight: 700;
-    font-size: 60px;
-    color: white;
-}
-#Introduction p {
-    font-family: var(--Inter);
-    font-weight: 400;
-    font-size: 18px;
-    color: white;
-    margin: 30px 0;
-}
-#Introduction img {
-    object-fit: cover;
-    width: 248px;
-    width: 248px;
-    border-radius: 99999px;
-    margin: 250px 200px;
-}
-#Introduction button {
-    background-color: #419D78;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 14px;
-    &:hover {
-        color: white;
-        background-color: #2D3047;
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article {
+        margin: 200px 0;
+    }
+
+    h2 {
+        font-family: $Playfair-Display;
+        font-weight: 700;
+        font-size: 60px;
+        color: $white-color;
+    }
+
+    p {
+        font-family: $Inter;
+        font-weight: 400;
+        font-size: 18px;
+        color: $white-color;
+        margin: 30px 0;
+    }
+
+    img {
+        object-fit: cover;
+        width: 248px;
+        width: 248px;
+        border-radius: 99999px;
+        margin: 250px 200px;
+    }
+
+    button {
+        background-color: $green-color;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 14px;
+        &:hover {
+            color: $white-color;
+            background-color: $black-color;
+        }
+    }
+    button a {
+        color: $white-color;
+        text-decoration: none;
+        font-family: $Inter;
+        font-weight: 500;
+        font-size: 16px;
     }
 }
-#Introduction button a {
-    color: white;
-    text-decoration: none;
-    font-family: var(--Inter);
-    font-weight: 500;
-    font-size: 16px;
-}
+
+
+
 
 @media screen and (max-width:1024px) {
     #Introduction img   {

@@ -32,11 +32,9 @@ const About = () => {
                         <FaHtml5 className="icon"/> 
                         <FaCss3Alt className="icon"/>
                         <IoLogoJavascript className="icon"/>
-                  
                         <FaNodeJs className="icon"/> 
                         <FaPhp className="icon"/>
                         <FaReact className="icon"/>
-                    
                         <FaFigma className="icon"/>
                         <FaWordpress className="icon"/>
                         <FaGithub className="icon"/>
