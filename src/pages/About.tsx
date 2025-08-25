@@ -11,7 +11,7 @@ const about = () => {
             <main>
                 <About />
             </main>
-
+            
             <Footer />
         </>
     );

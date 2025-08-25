@@ -1,13 +1,5 @@
-$green-color : #419D78;
-$black-color : #000000;
-$white-color : #FFFFFF;
-$Inter : "Inter", sans-serif; 
-$Playfair-Display :  "Playfair Display", serif;
-
-@mixin Grid-3C(){ // Grid-2C → display grid, grid template columns = 3 (1fr 1fr 1fr)
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+@import "./variables";
+@import "./mixins";
 
 /* Section 1 Projects */
 #Projects {
@@ -15,7 +7,7 @@ $Playfair-Display :  "Playfair Display", serif;
     padding: 30px;
 
     h2 {
-        font-family: $Playfair-Display;
+        font-family: $playfair-Display;
         font-weight: 700;
         font-size: 36px;
         text-align: center;
@@ -60,7 +52,7 @@ $Playfair-Display :  "Playfair Display", serif;
     }
 
     h3 {
-        font-family: $Playfair-Display;
+        font-family: $playfair-Display;
         font-weight: 700;
         font-size: 20px;
         margin: 15px 20px;
@@ -101,15 +93,18 @@ $Playfair-Display :  "Playfair Display", serif;
 }
 
 @media screen and (max-width:1024px) {
-    #div2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
+    #Projects {
+
+        #div2 {
+            @include Grid-2C();
+        }
     }
 }
 
 @media screen and (max-width:767px) {
-    #div2 {
-        display: grid;
-        grid-template-columns: 1fr;
+    #Projects {
+        #div2 {
+            @include Grid-1C();
+        }
     }
 }

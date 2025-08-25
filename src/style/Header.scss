@@ -1,7 +1,5 @@
-$green-color : #419D78;
-$black-color : black;
-$Inter : "Inter", sans-serif; 
-$Playfair-Display :  "Playfair Display", serif;
+@import "./variables";
+@import "./mixins";
 
 * {
     margin: 0;
@@ -22,7 +20,7 @@ header {
     h1 {
         font-weight: 700;
         font-size: 24px;
-        font-family: $Playfair-Display;
+        font-family: $playfair-Display;
     }
 
     nav {
@@ -61,23 +59,32 @@ header {
 
 
 @media screen and (max-width:1024px) {
-    header nav {
-        display: none;
-    }
-    #Bugermenu {
-        display: flex;
-        font-weight: 600;
-        font-size: 24px;
+    header { 
+
+        nav {
+            display: none;
+        }
+
+        #Bugermenu {
+            display: flex;
+            font-weight: 600;
+            font-size: 24px;
+        }
     }
 }
 
 @media screen and (max-width:767px) {
-    header nav {
-        display: none;
+    header {
+        
+        nav {
+            display: none;
+        }
+
+        #Bugermenu {
+            display: flex;
+            font-weight: 600;
+            font-size: 24px;
+        }
     }
-    #Bugermenu {
-        display: flex;
-        font-weight: 600;
-        font-size: 24px;
-    }
+    
 }

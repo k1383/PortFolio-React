@@ -1,21 +1,12 @@
-$green-color : #419D78;
-$black-color : #000000;
-$white-color : #FFFFFF;
-$gray-white-color : #D1D5DB;
-$Inter : "Inter", sans-serif; 
-$Playfair-Display :  "Playfair Display", serif;
-
-@mixin Grid-2C(){ // Grid-2C → display grid, grid template columns = 2 (1fr 1fr)
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+@import "./variables";
+@import "./mixins";
 
 /* Section 1 Contact */
 #Contact {
     margin: 50px 0;
 
     h2 { 
-        font-family: $Playfair-Display;
+        font-family: $playfair-Display;
         font-weight: 700;
         font-size: 36px;
         text-align: center;
@@ -29,7 +20,7 @@ $Playfair-Display :  "Playfair Display", serif;
         margin: 45px 0;
     }
 
-    /* Forumlaire */ 
+      /* Forumlaire */ 
     form {
         background-color: $white-color;
         box-shadow: 0px 1px 2px 0px #0000000D;
@@ -104,3 +95,22 @@ $Playfair-Display :  "Playfair Display", serif;
         }
     }
 }
+
+    @media screen and (max-width:767px) {
+    #Contact {
+    
+        form {
+           
+            article {
+                flex-direction: column;
+                margin: 0 30px;                
+            }
+
+            textarea {
+                width: 292px;
+                height: 73px;
+            } 
+        }
+    }
+}
+

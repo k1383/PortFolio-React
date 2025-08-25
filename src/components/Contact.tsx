@@ -5,7 +5,8 @@ const Contact = () => {
         <h2>Contactez-moi</h2>
             <p>Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter, je  <br />vous répondrai dans les plus brefs délais.</p>
             <form className="container" action="#" method="post" id="myForm">
-                <article>
+                    
+                  <article>
                     <div>
                         <label htmlFor="name">Nom</label>
                         <input type="name" required/>
@@ -25,6 +26,7 @@ const Contact = () => {
                 </div>
                 
                 <button type="submit" id="submit">Envoyer le message</button>
+
             </form>
     </section>
 };

@@ -1,0 +1,14 @@
+@mixin Grid-3C(){ // Grid-3C → columns = 3 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} //   @include Grid-3C();
+
+@mixin Grid-2C(){ // Grid-2C → columns = 2 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} //   @include Grid-2C();
+
+@mixin Grid-1C(){ // Grid-1C → columns = 1 
+    display: grid;
+    grid-template-columns: 1fr;
+} //   @include Grid-1C();

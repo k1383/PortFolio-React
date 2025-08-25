@@ -1,9 +1,5 @@
-$green-color : #419D78;
-$black-color : black;
-$gray-color : #9CA3AF;
-$white-color : #FFFFFF;
-$Inter : "Inter", sans-serif; 
-$Playfair-Display :  "Playfair Display", serif;
+@import "./variables";
+@import "./mixins";
 
 /* Footer */
 footer {

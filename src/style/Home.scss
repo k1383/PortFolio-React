@@ -1,13 +1,5 @@
-$green-color : #419D78;
-$black-color : #000000;
-$white-color : #FFFFFF;
-$Inter : "Inter", sans-serif; 
-$Playfair-Display :  "Playfair Display", serif;
-
-@mixin Grid-2C(){ // Grid-2C → display grid, grid template columns = 2 (1fr 1fr)
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+@import "./variables";
+@import "./mixins";
 
 * {
     margin: 0;
@@ -44,7 +36,7 @@ img {
     }
 
     h2 {
-        font-family: $Playfair-Display;
+        font-family: $playfair-Display;
         font-weight: 700;
         font-size: 60px;
         color: $white-color;
@@ -62,7 +54,7 @@ img {
         object-fit: cover;
         width: 248px;
         width: 248px;
-        border-radius: 99999px;
+        border-radius: 999px;
         margin: 250px 200px;
     }
 
@@ -88,18 +80,32 @@ img {
 
 
 @media screen and (max-width:1024px) {
-    #Introduction img   {
-        position: absolute;
-        left: 40%;
+    #Introduction {
+        > div {
+            @include Grid-1C();
+        }
+
+        article {
+            margin: 100px 0;
+        }
+
+        h2, p {
+            text-align: left;
+        }
+
+        img {
+            position: absolute;
+            top: 300px;
+            right: 80px;
+        }
     }
-    #Introduction div {
-        margin: 0 10px;
-    }
+    
 }
 
 @media screen and (max-width:767px) {
-    #Introduction div {
-        display: grid;
-        grid-template-columns: 1fr;
+    #Introduction {
+        div {
+            @include Grid-1C();
+        }
     } 
 }
