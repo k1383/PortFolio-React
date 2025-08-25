@@ -1,43 +1,58 @@
-/* Section 1 About */
-#About {
-    
-}
-#About h2 {
-    font-family: var(--Playfair-Display);
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    margin: 50px 0;
-}
-#About h3 {
-    font-family: var(--Playfair-Display);
-    font-weight: 600;
-    font-size: 24px;
-    margin: 10px 0;
-}
-#About p {
-    font-family: var(--Inter);
-    font-weight: 400;
-    font-size: 16px;
-}
-#div1 {
+$green-color : #419D78;
+$black-color : #000000;
+$white-color : #FFFFFF;
+$Inter : "Inter", sans-serif; 
+$Playfair-Display :  "Playfair Display", serif;
+
+@mixin Grid-2C(){ // Grid-2C → display grid, grid template columns = 2 (1fr 1fr)
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
 }
-#div1 a {
-    color: #419D78;
-    text-decoration: none;
-    font-family: var(--Inter);
-    font-weight: 500;
-    font-size: 16px;
-}
-#div1 article p{
-    margin: 20px 0;
-}
-.icon {
-    font-size: 40px;
-    margin: 15px 55px;  
+
+/* Section 1 About */
+#About {
+    h2 {
+        font-family: $Playfair-Display;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    h3 {
+        font-family: $Playfair-Display;
+        font-weight: 600;
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    p {
+        font-family: $Inter;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    #div1 {
+        @include Grid-2C();
+        gap: 50px;
+    }
+
+    #div1 a {
+        color: $green-color;
+        text-decoration: none;
+        font-family: $Inter;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    #div1 article p{
+        margin: 20px 0;
+    }
+
+    .icon {
+        font-size: 40px;
+        margin: 15px 55px;  
+    }
 }
 
 @media screen and (max-width:1024px) {

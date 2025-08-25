@@ -1,82 +1,103 @@
-/* Section 1 Projects */
-#Projects {
-    background-color: #F9FAFB;
-    padding: 30px;
-}
-#Projects h2 {
-    font-family: var(--Playfair-Display);
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-}
-#Intro p {
-    font-family: var(--Inter);
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    margin: 30px 0;
-}
-#div2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-  padding: 40px;
-}
-.Project_Display {
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-.Project_Display img {
-  display: block;
-  width: 100%;
-  height: 200px;         
-  object-fit: cover;   
-  border-radius: 12px 12px 0 0;
-}
-.Info {
-    margin:15px ;
-}
-.descriptionproject {
-    font-family: var(--Inter);
-    font-weight: 400;
-    font-size: 16px;
-    margin: 15px 20px;
-}
-h3 {
-    font-family: var(--Playfair-Display);
-    font-weight: 700;
-    font-size: 20px;
-    margin: 15px 20px;
-}
-#div2 a {
-    text-decoration: none;
-    color: #419D78;
-    font-family: var(--Inter);
-    font-weight: 500;
-    font-size: 16px;
-    margin: 15px 20px;
-}
-#Projects button {
-    background-color: #2D3047;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 14px;
-    display: block;
-    margin: 50px auto;
-    &:hover {
-        color: white;
-        background-color: #419D78;
-    }
-}
-#Projects button a{
-    color: white;
-    text-decoration: none;font-family: var(--Inter);
-    font-weight: 500;
-    font-size: 16px;
+$green-color : #419D78;
+$black-color : #000000;
+$white-color : #FFFFFF;
+$Inter : "Inter", sans-serif; 
+$Playfair-Display :  "Playfair Display", serif;
+
+@mixin Grid-3C(){ // Grid-2C → display grid, grid template columns = 3 (1fr 1fr 1fr)
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.icons-arrow {
-    font-size: 12px;
+/* Section 1 Projects */
+#Projects {
+    background-color: $white-color;
+    padding: 30px;
+
+    h2 {
+        font-family: $Playfair-Display;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    #Intro p {
+        font-family: $Inter;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    #div2 {
+        @include Grid-3C();
+        gap: 24px;
+        padding: 40px;
+    }
+
+    .Project_Display {
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .Project_Display img {
+        display: block;
+        width: 100%;
+        height: 200px;         
+        object-fit: cover;   
+        border-radius: 12px 12px 0 0;
+    }
+
+    .Info {
+        margin:15px ;
+    }
+
+    .descriptionproject {
+        font-family: $Inter;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 15px 20px;
+    }
+
+    h3 {
+        font-family: $Playfair-Display;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 15px 20px;
+    }
+
+    #div2 a {
+        text-decoration: none;
+        color: $green-color;
+        font-family: $Inter;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 15px 20px;
+    }
+
+    button {
+        background-color: $black-color;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 14px;
+        display: block;
+        margin: 50px auto;
+        &:hover {
+            color: $white-color;
+            background-color: $green-color;
+        }
+    }
+
+    button a{
+        color: $white-color;
+        text-decoration: none;font-family: $Inter;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .icons-arrow {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:1024px) {

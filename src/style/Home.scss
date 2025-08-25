@@ -4,6 +4,11 @@ $white-color : #FFFFFF;
 $Inter : "Inter", sans-serif; 
 $Playfair-Display :  "Playfair Display", serif;
 
+@mixin Grid-2C(){ // Grid-2C → display grid, grid template columns = 2 (1fr 1fr)
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 * {
     margin: 0;
 }
@@ -31,8 +36,7 @@ img {
     background-attachment: fixed; 
 
     div {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        @include Grid-2C();
     }
 
     article {
@@ -72,6 +76,7 @@ img {
             background-color: $black-color;
         }
     }
+
     button a {
         color: $white-color;
         text-decoration: none;
@@ -80,8 +85,6 @@ img {
         font-size: 16px;
     }
 }
-
-
 
 
 @media screen and (max-width:1024px) {
